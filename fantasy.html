@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy Stories - Web Spidey</title>
+<style>
+.btn1
+{
+    background:#ff1744;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+    font-family:Georgia;
+}
+.btn2
+{
+    background:#ff1744;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+    font-family:Georgia;
+}
+.btn3
+{
+    background:#ff1744;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+    font-family:Georgia;
+}
+.btn4
+{
+    background:#ff1744;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+    font-family:Georgia;
+}
+
+
+</style>
+<script>
+function showPremiumAlert() {
+
+    let confirmRegister = confirm("Get Premium!");
+
+    if(confirmRegister){
+        window.location.href = "premium.html";
+    }
+
+}
+</script>
+    <style>
+       body{
+    margin: 0;
+    font-family: Georgia;
+    background: #eef9f1;
+    color: #222;
+
+    /* Soft Green Shadow */
+    box-shadow:
+    inset 0 0 120px rgba(34, 197, 94, 0.25),
+    inset 0 0 200px rgba(20, 83, 45, 0.35);
+}
+
+/* Header */
+.header1{
+    background: linear-gradient(to right, #14532d, #22c55e);
+    color: white;
+    text-align: center;
+    padding: 25px;
+
+    /* Deep Green Glow Shadow */
+    box-shadow:
+    0 0 20px rgba(34, 197, 94, 0.7),
+    0 0 40px rgba(20, 83, 45, 0.8);
+}
+
+        .header1 h1 {
+            margin: 0;
+            font-size: 42px;
+        }
+
+        .header1 p {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+        
+/* NAVIGATION */
+
+.navbar{
+background:rgba(20,20,20,0.95);
+padding:18px;
+text-align:center;
+box-shadow:0px 2px 10px rgba(0,0,0,0.2);
+}
+
+.navbar a{
+color:white;
+text-decoration:none;
+margin:18px;
+font-size:18px;
+transition:0.3s;
+}
+
+.navbar a:hover{
+color:#d4b483;
+}
+
+      
+/* =========================
+        SPIDER-MAN HEADER
+========================= */
+
+.header{
+    position: relative;
+    background-color: #000;
+    text-align: center;
+    padding: 30px 20px;
+    overflow: hidden;
+    border-bottom: 3px solid red;
+}
+
+/* =========================
+        WEB EFFECT
+========================= */
+
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background:
+    
+    repeating-linear-gradient(
+        45deg,
+        transparent 0px,
+        transparent 60px,
+        rgba(255,0,0,0.15) 62px,
+        transparent 64px
+    ),
+
+    repeating-linear-gradient(
+        -45deg,
+        transparent 0px,
+        transparent 60px,
+        rgba(255,0,0,0.15) 62px,
+        transparent 64px
+    );
+
+    z-index: 0;
+}
+
+/* =========================
+            LOGO
+========================= */
+
+.logo{
+    width: 80px;
+    height: 80px;
+
+    border-radius: 50%;
+    object-fit: cover;
+
+    border: 2px solid red;
+
+    box-shadow: 0 0 15px red;
+
+    position: relative;
+    z-index: 1;
+
+    margin-bottom: 15px;
+}
+
+/* =========================
+            TITLE
+========================= */
+
+.header h1{
+    position: relative;
+    z-index: 1;
+
+    margin: 0;
+
+    font-size: 55px;
+    color: white;
+
+    letter-spacing: 4px;
+
+    text-shadow: 0 0 12px red;
+}
+
+/* =========================
+          SUBTITLE
+========================= */
+
+.header p{
+    position: relative;
+    z-index: 1;
+
+    margin-top: 10px;
+
+    font-size: 22px;
+
+    color: #f5d6d6;
+}
+/* NAVIGATION */
+
+.navbar{
+background:rgba(20,20,20,0.95);
+padding:18px;
+text-align:center;
+box-shadow:0px 2px 10px rgba(0,0,0,0.2);
+}
+
+.navbar a{
+color:white;
+text-decoration:none;
+margin:18px;
+font-size:18px;
+transition:0.3s;
+}
+
+.navbar a:hover{
+color:#d4b483;
+}
+        /* Container */
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+ 
+        /* Story Card */
+        .story-card {
+            background-color: white;
+            margin-bottom: 25px;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 6px solid #16a34a;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .story-card:hover {
+            transform: scale(1.02);
+        }
+
+        .story-card h2 {
+            color: #15803d;
+        }
+
+        .story-card p {
+            line-height: 1.8;
+        }
+
+        /* Button */
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 18px;
+            background-color: #16a34a;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .btn:hover {
+            background-color: #166534;
+        }
+       /* FOOTER */
+
+.footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:60px;
+}
+
+    </style>
+</head>
+
+<body>
+<!-- HEADER -->
+<div class="header">
+
+    <img src="logo.jpeg.jpeg"
+    alt="Web Spidey Logo"
+    class="logo">
+
+      <h1>WEB SPIDEY</h1>
+
+    <p>Story Paradise</p>
+
+</div>
+
+       
+    </div>
+
+</div>
+<!-- NAVIGATION -->
+
+<div class="navbar">
+
+<a href="home1.html">Home</a>
+<a href="categories.html">Categories</a>
+<a href="popular.html">Popular</a>
+<a href="register.html">Register</a>
+<a href="login.html">Login</a>
+<a href="logout.html">Logout</a>
+</div>
+
+
+
+   
+
+    <!-- Header -->
+    <div class="header1">
+        <h1>🧙 Fantasy Stories</h1>
+        <p>Magic worlds, dragons, and hidden powers</p>
+    </div>
+    <!-- Stories -->
+    <div class="container">
+
+        <!-- Story 1 -->
+        <div class="story-card">
+            <h2>The Dragon’s Crystal</h2>
+            <p>
+                Deep inside the Forbidden Mountains,
+                young warrior Elric discovered a glowing crystal guarded by a giant dragon.
+                Instead of attacking, the dragon spoke:
+                “Only the chosen one can hear my voice.”
+                The crystal suddenly floated into Elric’s hands,
+                awakening powers hidden within him since birth.
+                From that moment, his destiny changed forever.
+            </p>
+
+            
+               <a href="#" class="btn" onclick="showPremiumAlert()">
+    Read More
+</a>
+        </div>
+
+        <!-- Story 2 -->
+        <div class="story-card">
+            <h2>The Hidden Kingdom</h2>
+            <p>
+                Mira found an ancient key buried beneath an old tree.
+                The moment she touched it,
+                a secret portal opened in the forest.
+                Beyond it stood a magical kingdom filled with flying castles,
+                glowing rivers, and talking animals.
+                But the kingdom was dying,
+                and only Mira possessed the power to save it.
+            </p>
+
+            
+               <a href="#" class="btn" onclick="showPremiumAlert()">
+    Read More
+</a>
+        </div>
+
+        <!-- Story 3 -->
+        <div class="story-card">
+            <h2>The Boy with Silver Eyes</h2>
+            <p>
+                In the village of Ravenwood,
+                legends spoke of a child born with silver eyes.
+                When Leo turned sixteen,
+                strange symbols appeared on his hands.
+                He soon learned he could control fire with his thoughts.
+                Hunted by dark sorcerers,
+                Leo began a dangerous journey to uncover the truth about his powers.
+            </p>
+
+            
+               <a href="#" class="btn" onclick="showPremiumAlert()">
+    Read More
+</a>
+        </div>
+
+        <!-- Story 4 -->
+        <div class="story-card">
+            <h2>The Moonlight Sword</h2>
+            <p>
+                Every hundred years,
+                a magical sword appeared beneath the moonlight lake.
+                Warriors from every kingdom tried to claim it,
+                but none succeeded.
+                Princess Arya secretly entered the competition disguised as a knight.
+                When she touched the sword,
+                it burst into blue flames and whispered her name.
+            </p>
+
+               <a href="#" class="btn" onclick="showPremiumAlert()">
+    Read More
+</a>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+     <div style="background-color: black; color: white; text-align: center; padding: 10px;">
+        <p>© 2026 Web Spidey | All Rights Reserved</p>
+    </div>
+
+</body>
+</html>

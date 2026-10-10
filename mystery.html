@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystery Stories - Web Spidey</title>
+<style>
+.btn1
+{
+    background:#ff1744;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+    font-family:Georgia;}
+.btn2
+{
+    background:#ff1744;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+    font-family:Georgia;
+}
+.btn3
+{
+    background:#ff1744;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+    font-family:Georgia;
+.btn4
+{
+    background:#ff1744;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+    font-family:Georgia;
+
+
+</style>
+<script>
+function showPremiumAlert() {
+
+    let confirmRegister = confirm("Get Premium!");
+
+    if(confirmRegister){
+        window.location.href = "premium.html";
+    }
+
+}
+</script>
+    <style>
+       body{
+    margin: 0;
+    font-family: Georgia;
+    background-color: #eef3f8;
+    color: #222;
+
+    /* Soft Blue Shadow */
+    box-shadow:
+    inset 0 0 120px rgba(0, 89, 179, 0.25),
+    inset 0 0 200px rgba(0, 31, 63, 0.35);
+}
+
+/* Header */
+.header1{
+    background: linear-gradient(to right, #001f3f, #0059b3);
+    color: white;
+    text-align: center;
+    padding: 25px;
+
+    /* Deep Blue Glow Shadow */
+    box-shadow:
+    0 0 20px rgba(0, 89, 179, 0.7),
+    0 0 40px rgba(0, 31, 63, 0.8);
+}
+
+        .header1 h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        .header1 p {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #d9e6f2;
+        }
+/* =========================
+        SPIDER-MAN HEADER
+========================= */
+
+.header{
+    position: relative;
+    background-color: #000;
+    text-align: center;
+    padding: 30px 20px;
+    overflow: hidden;
+    border-bottom: 3px solid red;
+}
+
+/* =========================
+        WEB EFFECT
+========================= */
+
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background:
+    
+    repeating-linear-gradient(
+        45deg,
+        transparent 0px,
+        transparent 60px,
+        rgba(255,0,0,0.15) 62px,
+        transparent 64px
+    ),
+
+    repeating-linear-gradient(
+        -45deg,
+        transparent 0px,
+        transparent 60px,
+        rgba(255,0,0,0.15) 62px,
+        transparent 64px
+    );
+
+    z-index: 0;
+}
+
+/* =========================
+            LOGO
+========================= */
+
+.logo{
+    width: 80px;
+    height: 80px;
+
+    border-radius: 50%;
+    object-fit: cover;
+
+    border: 2px solid red;
+
+    box-shadow: 0 0 15px red;
+
+    position: relative;
+    z-index: 1;
+
+    margin-bottom: 15px;
+}
+
+/* =========================
+            TITLE
+========================= */
+
+.header h1{
+    position: relative;
+    z-index: 1;
+
+    margin: 0;
+
+    font-size: 55px;
+    color: white;
+
+    letter-spacing: 4px;
+
+    text-shadow: 0 0 12px red;
+}
+
+/* =========================
+          SUBTITLE
+========================= */
+
+.header p{
+    position: relative;
+    z-index: 1;
+
+    margin-top: 10px;
+
+    font-size: 22px;
+
+    color: #f5d6d6;
+}
+/* NAVIGATION */
+
+.navbar{
+background:rgba(20,20,20,0.95);
+padding:18px;
+text-align:center;
+box-shadow:0px 2px 10px rgba(0,0,0,0.2);
+}
+
+.navbar a{
+color:white;
+text-decoration:none;
+margin:18px;
+font-size:18px;
+transition:0.3s;
+}
+
+.navbar a:hover{
+color:#d4b483;
+}
+        /* Container */
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Story Card */
+        .story-card {
+            background-color: white;
+            margin-bottom: 25px;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 6px solid #0073e6;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .story-card:hover {
+            transform: scale(1.02);
+        }
+
+        .story-card h2 {
+            color: #0059b3;
+        }
+
+        .story-card p {
+            line-height: 1.8;
+        }
+
+        /* Button */
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 18px;
+            background-color: #0073e6;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .btn:hover {
+            background-color: #004c99;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #001f3f;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+		.footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:60px;
+}
+    </style>
+</head>
+
+<body>
+<!-- HEADER -->
+<div class="header">
+
+    <img src="logo.jpeg.jpeg"
+    alt="Web Spidey Logo"
+    class="logo">
+
+      <h1>WEB SPIDEY</h1>
+
+    <p>Story Paradise</p>
+
+</div>
+
+       
+    </div>
+
+</div>
+<!-- NAVIGATION -->
+
+<div class="navbar">
+
+<a href="home1.html">Home</a>
+<a href="categories.html">Categories</a>
+<a href="popular.html">Popular</a>
+<a href="register.html">Register</a>
+<a href="login.html">Login</a>
+<a href="logout.html">Logout</a>
+</div>
+
+
+
+   
+
+    <!-- Header -->
+    <div class="header1">
+        <h1>🕵️ Mystery Stories</h1>
+        <p>Secrets, clues, and detective adventures</p>
+    </div>
+
+    <!-- Stories -->
+    <div class="container">
+
+        <!-- Story 1 -->
+        <div class="story-card">
+            <h2>The Locked Library</h2>
+            <p>
+                Detective Aryan received a strange call from the city library.
+                The librarian was found unconscious inside a locked room.
+                No windows were open.
+                No spare key existed.
+                But on the dusty floor, Aryan noticed fresh footprints leading to a bookshelf.
+                Pulling one old book revealed a hidden tunnel behind the wall.
+                Someone had escaped through a secret passage forgotten for decades.
+            </p>
+
+               <a href="#" class="btn" onclick="showPremiumAlert()">
+    Read More
+</a>
+        </div>
+
+        <!-- Story 2 -->
+        <div class="story-card">
+            <h2>The Missing Necklace</h2>
+            <p>
+                A priceless diamond necklace disappeared during a royal dinner party.
+                Every guest claimed innocence.
+                Detective Meera carefully observed the room.
+                Then she noticed candle wax on one guest’s glove.
+                The lights had gone out only once during dinner.
+                Meera smiled quietly.
+                The thief had hidden the necklace inside the melted candle stand.
+            </p>
+
+               <a href="#" class="btn" onclick="showPremiumAlert()">
+    Read More
+</a>
+        </div>
+
+        <!-- Story 3 -->
+        <div class="story-card">
+            <h2>The Train Without a Passenger</h2>
+            <p>
+                At midnight, a train arrived at the station completely empty.
+                Yet the ticket records showed over 200 passengers onboard.
+                Inspector Ravi searched every compartment.
+                In the last cabin, he found a single suitcase.
+                Inside it was a map marked with red circles.
+                Each location matched unsolved disappearances from the past ten years.
+            </p>
+
+               <a href="#" class="btn" onclick="showPremiumAlert()">
+    Read More
+</a>
+        </div>
+
+        <!-- Story 4 -->
+        <div class="story-card">
+            <h2>The Clock Tower Secret</h2>
+            <p>
+                Every night at exactly 11:11 PM,
+                the old clock tower stopped ticking for one minute.
+                Town residents believed it was cursed.
+                Curious journalist Nina climbed the tower one stormy night.
+                Hidden behind the giant clock gears,
+                she discovered a tiny room filled with letters.
+                The letters exposed a mayor’s secret crimes buried for 30 years.
+            </p>
+
+               <a href="#" class="btn" onclick="showPremiumAlert()">
+    Read More
+</a>
+        </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+     <div style="background-color: black; color: white; text-align: center; padding: 10px;">
+        <p>© 2026 Web Spidey | All Rights Reserved</p>
+    </div>
+
+</body>
+</html>

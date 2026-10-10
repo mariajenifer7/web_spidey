@@ -1,0 +1,399 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romance Stories - Web Spidey</title>
+    
+<style>
+.btn1
+{
+    background:#ff1744;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+    font-family:Georgia;
+}
+.btn2
+{
+    background:#ff1744;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+    font-family:Georgia;
+}
+.btn3
+{
+    background:#ff1744;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+    font-family:Georgia;
+.btn4
+{
+    background:#ff1744;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+    font-family:Georgia;
+}
+
+
+</style>
+<script>
+function showPremiumAlert() {
+
+    let confirmRegister = confirm("Get Premium!");
+
+    if(confirmRegister){
+        window.location.href = "premium.html";
+    }
+
+}
+</script>
+    <style>
+        body{
+    margin: 0;
+    font-family: Georgia;
+    background-color: #fff7e6;
+    color: #222;
+
+    /* Pink + Purple Luxury Shadow */
+    box-shadow:
+    inset 0 0 120px rgba(255, 20, 147, 0.55),
+    inset 0 0 180px rgba(138, 43, 226, 0.45);
+}
+
+/* Header */
+.header1{
+    background: linear-gradient(to right, #ff1493, #ff69b4);
+    color: white;
+    text-align: center;
+    padding: 25px;
+
+    /* Pink + Purple Glow */
+    box-shadow:
+    0 0 20px rgba(255, 20, 147, 0.8),
+    0 0 45px rgba(138, 43, 226, 0.7);
+}
+        .header1 h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        .header1 p {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+/* =========================
+        SPIDER-MAN HEADER
+========================= */
+
+.header{
+    position: relative;
+    background-color: #000;
+    text-align: center;
+    padding: 30px 20px;
+    overflow: hidden;
+    border-bottom: 3px solid red;
+}
+
+/* =========================
+        WEB EFFECT
+========================= */
+
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background:
+    
+    repeating-linear-gradient(
+        45deg,
+        transparent 0px,
+        transparent 60px,
+        rgba(255,0,0,0.15) 62px,
+        transparent 64px
+    ),
+
+    repeating-linear-gradient(
+        -45deg,
+        transparent 0px,
+        transparent 60px,
+        rgba(255,0,0,0.15) 62px,
+        transparent 64px
+    );
+
+    z-index: 0;
+}
+
+/* =========================
+            LOGO
+========================= */
+
+.logo{
+    width: 80px;
+    height: 80px;
+
+    border-radius: 50%;
+    object-fit: cover;
+
+    border: 2px solid red;
+
+    box-shadow: 0 0 15px red;
+
+    position: relative;
+    z-index: 1;
+
+    margin-bottom: 15px;
+}
+
+/* =========================
+            TITLE
+========================= */
+
+.header h1{
+    position: relative;
+    z-index: 1;
+
+    margin: 0;
+
+    font-size: 55px;
+    color: white;
+
+    letter-spacing: 4px;
+
+    text-shadow: 0 0 12px red;
+}
+
+/* =========================
+          SUBTITLE
+========================= */
+
+.header p{
+    position: relative;
+    z-index: 1;
+
+    margin-top: 10px;
+
+    font-size: 22px;
+
+    color: #f5d6d6;
+}
+/* NAVIGATION */
+
+.navbar{
+background:rgba(20,20,20,0.95);
+padding:18px;
+text-align:center;
+box-shadow:0px 2px 10px rgba(0,0,0,0.2);
+}
+
+.navbar a{
+color:white;
+text-decoration:none;
+margin:18px;
+font-size:18px;
+transition:0.3s;
+}
+
+.navbar a:hover{
+color:#d4b483;
+}
+        /* Story Container */
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Story Cards */
+        .story-card {
+            background-color: white;
+            margin-bottom: 25px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border-left: 6px solid #ff4d88;
+            transition: transform 0.3s;
+        }
+
+        .story-card:hover {
+            transform: scale(1.02);
+        }
+
+        .story-card h2 {
+            color: #ff1a66;
+        }
+
+        .story-card p {
+            line-height: 1.7;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #ff4d88;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        /* Button */
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 18px;
+            background-color: #ff4d88;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .btn:hover {
+            background-color: #e6005c;
+        }
+    </style>
+    
+</head>
+
+<body>
+
+
+ <!-- HEADER -->
+<div class="header">
+
+    <img src="logo.jpeg.jpeg"
+    alt="Web Spidey Logo"
+    class="logo">
+
+      <h1>WEB SPIDEY</h1>
+
+    <p>Story Paradise</p>
+
+</div>
+
+       
+    </div>
+
+</div>
+<!-- NAVIGATION -->
+
+<div class="navbar">
+
+<a href="home1.html">Home</a>
+<a href="categories.html">Categories</a>
+<a href="popular.html">Popular</a>
+<a href="register.html">Register</a>
+<a href="login.html">Login</a>
+<a href="logout.html">Logout</a>
+</div>
+
+
+
+   
+
+    <!-- Header -->
+    <div class="header1">
+        <h1>💕 Romance Stories</h1>
+        <p>Love stories, heartbreak, and emotional journeys</p>
+    </div>
+
+    <!-- Stories -->
+    <div class="container">
+
+        <!-- Story 1 -->
+        <div class="story-card">
+            <h2>The Last Message</h2>
+            <p>
+                Aarav waited every night for her message. 
+                Even after they broke up, he still checked his phone at midnight.
+                One rainy evening, his screen finally lit up with her name.
+                “I still miss you,” the message read.
+                His heart raced. But before he could reply, another message came:
+                “This number no longer belongs to Priya.”
+                He stared silently at the screen, realizing he had been texting a memory all along.
+            </p>
+
+            <a href="#" class="btn" onclick="showPremiumAlert()">
+    Read More
+</a>
+        </div>
+
+        <!-- Story 2 -->
+        <div class="story-card">
+            <h2>Love at Platform 7</h2>
+            <p>
+                Every morning, Maya saw the same boy at Platform 7.
+                He always carried a black notebook and smiled whenever their eyes met.
+                Months passed without a single word between them.
+                One day, he finally walked toward her and handed over the notebook.
+                Inside were sketches of her from every morning they had shared the station together.
+                On the last page, he wrote:
+                “I fell in love with the girl who never knew my name.”
+            </p>
+
+            
+            <a href="#" class="btn" onclick="showPremiumAlert()">
+    Read More
+</a>
+        </div>
+
+        <!-- Story 3 -->
+        <div class="story-card">
+            <h2>Broken Promises</h2>
+            <p>
+                “I’ll come back for you,” Karan whispered before leaving for another city.
+                Nila believed him for three long years.
+                She saved every letter, every photo, every promise.
+                But one evening she saw his wedding picture online.
+                Her world shattered in silence.
+                She closed her laptop, smiled through tears,
+                and finally understood that some people are only meant to teach us how to let go.
+            </p>
+
+            <a href="#" class="btn">Read More</a>
+        </div>
+
+        <!-- Story 4 -->
+        <div class="story-card">
+            <h2>The Café Corner</h2>
+            <p>
+                Riya always sat in the same corner of the café every Sunday.
+                A stranger began leaving handwritten notes on her table.
+                Tiny messages like:
+                “Your smile brightens this place.”
+                Weeks later, she finally met him.
+                They laughed, shared coffee, and slowly fell in love.
+                But fate was cruel —
+                he was moving abroad the next day.
+                Sometimes, the shortest love stories leave the deepest scars.
+            </p>
+
+          
+            <a href="#" class="btn" onclick="showPremiumAlert()">
+    Read More
+</a>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+     <div style="background-color: black; color: white; text-align: center; padding: 10px;">
+        <p>© 2026 Web Spidey | All Rights Reserved</p>
+    </div>
+
+
+</body>
+</html>
+

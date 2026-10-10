@@ -1,0 +1,588 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>The Midnight Call - Web Spidey</title>
+
+<style>
+
+body{
+    margin: 0;
+    font-family: Georgia, serif;
+    color: #FFF;
+
+    /* Background Image */
+    background-image:
+    
+    /* Dark Overlay */
+    linear-gradient(rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)),
+
+    /* Image */
+   url(midnit.jpeg);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Background Scroll Effect */
+    background-attachment: scroll;
+}
+
+/* ================= MAIN HEADING ================= */
+
+h1{
+    font-size: 40px;
+}
+
+/* =========================
+        SPIDER-MAN HEADER
+========================= */
+
+.header{
+    position: relative;
+    background-color: #000;
+    text-align: center;
+    padding: 30px 20px;
+    overflow: hidden;
+    border-bottom: 3px solid red;
+}
+
+/* =========================
+        WEB EFFECT
+========================= */
+
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background:
+    
+    repeating-linear-gradient(
+        45deg,
+        transparent 0px,
+        transparent 60px,
+        rgba(255,0,0,0.15) 62px,
+        transparent 64px
+    ),
+
+    repeating-linear-gradient(
+        -45deg,
+        transparent 0px,
+        transparent 60px,
+        rgba(255,0,0,0.15) 62px,
+        transparent 64px
+    );
+
+    z-index: 0;
+}
+
+/* =========================
+            LOGO
+========================= */
+
+.logo{
+    width: 80px;
+    height: 80px;
+
+    border-radius: 50%;
+    object-fit: cover;
+
+    border: 2px solid red;
+
+    box-shadow: 0 0 15px red;
+
+    position: relative;
+    z-index: 1;
+
+    margin-bottom: 15px;
+}
+
+/* =========================
+            TITLE
+========================= */
+
+.header h1{
+    position: relative;
+    z-index: 1;
+
+    margin: 0;
+
+    font-size: 55px;
+    color: white;
+
+    letter-spacing: 4px;
+
+    text-shadow: 0 0 12px red;
+}
+
+/* =========================
+          SUBTITLE
+========================= */
+
+.header p{
+    position: relative;
+    z-index: 1;
+
+    margin-top: 10px;
+
+    font-size: 22px;
+
+    color: #f5d6d6;
+}
+
+/* ================= NAVIGATION ================= */
+
+.navbar{
+    background: rgba(20,20,20,0.95);
+    padding: 18px;
+    text-align: center;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    margin: 18px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.navbar a:hover{
+    color: #d4b483;
+}
+
+/* ================= HERO SECTION ================= */
+
+.hero{
+    width: 72%;
+    margin: auto;
+    margin-top: 50px;
+    background: rgba(255,255,255,0.75);
+    padding: 40px;
+    border-radius: 22px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 5px 18px rgba(0,0,0,0.12);
+    text-align: center;
+}
+
+.hero h2{
+    font-size: 35px;
+    margin-top: 0;
+    letter-spacing: 2px;
+}
+
+.hero p{
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+/* ================= BUTTON ================= */
+
+.main-btn{
+    padding: 15px 35px;
+    background: #1f1f1f;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: Georgia;
+}
+
+.main-btn:hover{
+    background: #d4b483;
+    color: black;
+}
+
+/* ================= SECTION TITLE ================= */
+
+.section-title{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+/* ================= STORY CONTENT ================= */
+
+.story{
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 20px;
+}
+
+/* STORY CONTENT */
+
+.story{
+    padding:40px;
+    max-width:900px;
+    margin:auto;
+    line-height:1.8;
+    font-size:20px;
+}
+
+/* FOOTER */
+
+.footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:60px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+    <div class="header">
+
+    <img src="logo.jpeg.jpeg"
+    alt="Web Spidey Logo"
+    class="logo">
+
+    <h1>WEB SPIDEY</h1>
+
+    <p>Story Paradise</p>
+
+</div>
+
+       
+    </div>
+
+</div>
+
+    <!-- NAVBAR -->
+
+    <div class="navbar">
+        <a href="home1.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="popular.html">Popular</a>
+        <a href="login.html">Login</a>
+    </div>
+
+<div class="story">
+
+    <h1 style="text-align:center; color:red;">
+        ☎️ The Midnight Call
+    </h1>
+
+    <p>
+        It was exactly <b>12:00 AM</b>.
+    </p>
+
+    <p>
+        Rain hit the windows hard as Maya sat alone in her apartment.
+        The electricity had gone out an hour ago, leaving only the sound
+        of thunder and the ticking clock in the darkness.
+    </p>
+
+    <p>Suddenly...</p>
+
+    <h2 style="color:yellow; text-align:center;">
+        📞 RING... RING...
+    </h2>
+
+    <p>
+        Her phone vibrated on the table.
+    </p>
+
+    <p>
+        <b>Unknown Number.</b>
+    </p>
+
+    <p>
+        Maya hesitated before answering.
+    </p>
+
+    <p style="font-style:italic; color:lightgray;">
+        "Hello...?"
+    </p>
+
+    <p>
+        Silence.
+    </p>
+
+    <p>
+        Then a slow whisper came through the speaker.
+    </p>
+
+    <p style="color:red;">
+        "Don't look behind you..."
+    </p>
+
+    <p>
+        Maya froze.
+    </p>
+
+    <p>
+        Her heart pounded loudly in her chest.
+        She laughed nervously, thinking it was a prank call.
+    </p>
+
+    <p>But then...</p>
+
+    <p style="color:red;">
+        "I'm already inside your house."
+    </p>
+
+    <p>
+        The call disconnected.
+    </p>
+
+    <p>
+        Maya quickly turned on her phone flashlight and checked every room.
+        Nothing.
+    </p>
+
+    <p>
+        She locked the bedroom door and tried calling the police,
+        but there was no signal.
+    </p>
+
+    <p>
+        Then she heard it.
+    </p>
+
+    <h2 style="color:yellow; text-align:center;">
+        TAP... TAP... TAP...
+    </h2>
+
+    <p>
+        Footsteps outside her bedroom.
+    </p>
+
+    <p>
+        Slowly, the doorknob began to turn.
+    </p>
+
+    <p>
+        Maya stepped backward, unable to breathe.
+    </p>
+
+    <p>
+        Her phone rang again.
+    </p>
+
+    <p>
+        <b>Unknown Number.</b>
+    </p>
+
+    <p>
+        With shaking hands, she answered.
+    </p>
+
+    <p style="color:red;">
+        "I told you not to look behind you..."
+    </p>
+
+    <p>
+        Maya slowly turned around.
+    </p>
+
+    <p>
+        At first, she saw nothing.
+    </p>
+
+    <p>
+        Only darkness.
+    </p>
+
+    <p>
+        The faint light from her phone trembled in her shaking hand
+        as she scanned the room.
+        Her closet door was slightly open now.
+        She was sure it had been closed before.
+    </p>
+
+    <p>Then—</p>
+
+    <h2 style="color:yellow; text-align:center;">
+        CREEEEAK...
+    </h2>
+
+    <p>
+        The closet door slowly opened wider by itself.
+    </p>
+
+    <p>
+        Maya stepped back until her legs hit the bed.
+        Her breathing became heavy.
+    </p>
+
+    <p style="font-style:italic; color:lightgray;">
+        "Who's there?"
+    </p>
+
+    <p>
+        No answer.
+    </p>
+
+    <p>
+        The room suddenly became freezing cold.
+    </p>
+
+    <p>
+        Her phone screen flickered.
+    </p>
+
+    <h2 style="color:yellow; text-align:center;">
+        Unknown Number Calling...
+    </h2>
+
+    <p>
+        Again.
+    </p>
+
+    <p>
+        Maya stared at the screen in horror before answering.
+    </p>
+
+    <p>
+        A raspy voice whispered:
+    </p>
+
+    <p style="color:red;">
+        "I can see you."
+    </p>
+
+    <p>
+        The bedroom light suddenly flashed on for one second.
+    </p>
+
+    <p>
+        And in that single flash—
+    </p>
+
+    <p>
+        Maya saw a tall shadow standing inside the closet.
+    </p>
+
+    <p>Pale face.</p>
+
+    <p>Dark hollow eyes.</p>
+
+    <p>A twisted smile.</p>
+
+    <p>
+        The light went out again.
+    </p>
+
+    <p>
+        Maya screamed and ran toward the bedroom door,
+        but it wouldn't open.
+    </p>
+
+    <h2 style="color:yellow; text-align:center;">
+        BANG!
+    </h2>
+
+    <p>
+        Something slammed against the other side.
+    </p>
+
+    <p>
+        Her phone slipped from her hand and fell onto the floor.
+    </p>
+
+    <p>
+        Through the speaker, the voice started laughing softly.
+    </p>
+
+    <p>
+        Then the laughter stopped.
+    </p>
+
+    <p>
+        Complete silence filled the room.
+    </p>
+
+    <p>
+        Maya slowly bent down to pick up the phone.
+    </p>
+
+    <p>
+        On the screen was a photo taken just seconds ago.
+    </p>
+
+    <p>
+        A photo of Maya standing in her room.
+    </p>
+
+    <p>
+        And behind her...
+    </p>
+
+    <p style="color:red;">
+        The smiling figure was getting closer.
+    </p>
+
+    <p>
+        Suddenly, icy fingers touched her shoulder.
+    </p>
+
+    <p>
+        The phone dropped again.
+    </p>
+
+    <p>
+        The last thing Maya heard was the whisper in her ear:
+    </p>
+
+    <p style="color:red;">
+        "Now... turn around."
+    </p>
+
+    <p>
+        The neighbors reported hearing a loud scream
+        at exactly 12:13 AM.
+    </p>
+
+    <p>
+        When the police arrived, the apartment was empty.
+    </p>
+
+    <p>
+        No signs of forced entry.
+    </p>
+
+    <p>
+        No sign of Maya.
+    </p>
+
+    <p>
+        Only her phone remained on the bedroom floor.
+    </p>
+
+    <p style="color:lightgray;">
+        Still connected to the call. 📞👁️
+    </p>
+
+    <h2 style="text-align:center; color:red;">
+        👁️ THE END 👁️
+    </h2>
+
+</div>
+<!-- FOOTER -->
+
+<div class="footer">
+
+<p>
+© 2026 Web Spidey | All Rights Reserved
+</p>
+
+</div>
+</body>
+</html>

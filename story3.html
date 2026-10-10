@@ -1,0 +1,702 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>The Hidden Truth - Web Spidey</title>
+<style>
+
+body{
+    margin: 0;
+    font-family: Georgia, serif;
+    color: #FFF;
+
+    /* Background Image */
+    background-image:
+    
+    /* Dark Overlay */
+    linear-gradient(rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)),
+
+    /* Image */
+    url("mystry.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Background Scroll Effect */
+    background-attachment: scroll;
+}
+
+/* =========================
+        SPIDER-MAN HEADER
+========================= */
+
+.header{
+    position: relative;
+    background-color: #000;
+    text-align: center;
+    padding: 30px 20px;
+    overflow: hidden;
+    border-bottom: 3px solid red;
+}
+
+/* =========================
+        WEB EFFECT
+========================= */
+
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background:
+    
+    repeating-linear-gradient(
+        45deg,
+        transparent 0px,
+        transparent 60px,
+        rgba(255,0,0,0.15) 62px,
+        transparent 64px
+    ),
+
+    repeating-linear-gradient(
+        -45deg,
+        transparent 0px,
+        transparent 60px,
+        rgba(255,0,0,0.15) 62px,
+        transparent 64px
+    );
+
+    z-index: 0;
+}
+
+/* =========================
+            LOGO
+========================= */
+
+.logo{
+    width: 80px;
+    height: 80px;
+
+    border-radius: 50%;
+    object-fit: cover;
+
+    border: 2px solid red;
+
+    box-shadow: 0 0 15px red;
+
+    position: relative;
+    z-index: 1;
+
+    margin-bottom: 15px;
+}
+
+/* =========================
+            TITLE
+========================= */
+
+.header h1{
+    position: relative;
+    z-index: 1;
+
+    margin: 0;
+
+    font-size: 55px;
+    color: white;
+
+    letter-spacing: 4px;
+
+    text-shadow: 0 0 12px red;
+}
+
+/* =========================
+          SUBTITLE
+========================= */
+
+.header p{
+    position: relative;
+    z-index: 1;
+
+    margin-top: 10px;
+
+    font-size: 22px;
+
+    color: #f5d6d6;
+}
+
+
+
+/* ================= MAIN HEADING ================= */
+
+h1{
+    font-size: 40px;
+}
+
+/* ================= NAVIGATION ================= */
+
+.navbar{
+    background: rgba(20,20,20,0.95);
+    padding: 18px;
+    text-align: center;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    margin: 18px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.navbar a:hover{
+    color: #d4b483;
+}
+
+/* ================= HERO SECTION ================= */
+
+.hero{
+    width: 72%;
+    margin: auto;
+    margin-top: 50px;
+    background: rgba(255,255,255,0.75);
+    padding: 40px;
+    border-radius: 22px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 5px 18px rgba(0,0,0,0.12);
+    text-align: center;
+}
+
+.hero h2{
+    font-size: 35px;
+    margin-top: 0;
+    letter-spacing: 2px;
+}
+
+.hero p{
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+/* ================= BUTTON ================= */
+
+.main-btn{
+    padding: 15px 35px;
+    background: #1f1f1f;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: Georgia;
+}
+
+.main-btn:hover{
+    background: #d4b483;
+    color: black;
+}
+
+/* ================= SECTION TITLE ================= */
+
+.section-title{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+/* ================= STORY CONTENT ================= */
+
+.story{
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 20px;
+}
+
+/* STORY CONTENT */
+
+.story{
+    padding:40px;
+    max-width:900px;
+    margin:auto;
+    line-height:1.8;
+    font-size:20px;
+}
+
+/* FOOTER */
+
+.footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:60px;
+}
+
+</style>
+</head>
+
+
+<body>
+
+<div class="overlay">
+
+    <!-- HEADER -->
+
+   <div class="header">
+
+    <img src="logo.jpeg.jpeg"
+    alt="Web Spidey Logo"
+    class="logo">
+
+    <h1>WEB SPIDEY</h1>
+
+    <p>Story Paradise</p>
+
+</div>
+
+       
+    </div>
+
+</div>
+
+    <!-- NAVBAR -->
+
+    <div class="navbar">
+        <a href="home1.html">Home</a>
+        <a href="categories.html">Categories</a>
+         <a href="popular.html">Popular</a>
+        <a href="login.html">Login</a>
+    </div>
+    <div class="story">
+    <div style="padding:30px; line-height: 1.8; font-family: Georgia; text color:#FFF;">
+
+    <h1 style="text-align: center; color:#1e90ff;"> 🕵️ The Hidden Truth </h1>
+        🕵️ The Hidden Truth
+    </h1>
+
+    <p>
+        The small town of Ravenswood looked peaceful from the outside,
+        but everyone knew it carried dark secrets.
+    </p>
+
+    <p>
+        One cold evening, journalist Ethan Carter arrived in town to investigate
+        the mysterious disappearance of a girl named Lily Harper.
+    </p>
+
+    <p>
+        She had vanished ten years ago without leaving a single clue.
+    </p>
+
+    <p>
+        The townspeople refused to speak about her.
+        Whenever Ethan asked questions, they quickly changed the subject.
+    </p>
+
+    <p>
+        Something felt wrong.
+    </p>
+
+    <p>
+        That night, Ethan stayed at an old hotel near the forest.
+    </p>
+
+    <p>
+        Around midnight, he heard strange noises coming from the room above him.
+    </p>
+
+    <p>
+        Footsteps.
+    </p>
+
+    <p>
+        Whispering.
+    </p>
+
+    <p>
+        Then silence.
+    </p>
+
+    <p>
+        Curious, Ethan climbed upstairs and discovered a locked room at the end of the hallway.
+    </p>
+
+    <p>
+        The hotel owner suddenly appeared behind him.
+    </p>
+
+    <p style="color: red;">
+        "That room should never be opened."
+    </p>
+
+    <p>
+        But Ethan’s curiosity only grew stronger.
+    </p>
+
+    <p>
+        The next day, he secretly returned with a spare key he had stolen from the front desk.
+    </p>
+
+    <p>
+        As the door creaked open, dust filled the air.
+    </p>
+
+    <p>
+        Inside the room were old photographs, newspaper clippings,
+        and a broken necklace lying on the floor.
+    </p>
+
+    <p>
+        Ethan froze when he saw one photo clearly.
+    </p>
+
+    <p>
+        It showed Lily Harper standing beside the hotel owner.
+    </p>
+
+    <p>
+        On the back of the photo were the words:
+    </p>
+
+    <p style="font-style: italic; color: #1e3a5f;">
+        "Some truths are buried for a reason."
+    </p>
+
+    <p>
+        Suddenly, Ethan heard footsteps behind him.
+    </p>
+
+    <p>
+        He turned around slowly.
+    </p>
+
+    <p>
+        The hotel owner stood in the doorway holding an old shovel.
+    </p>
+
+    <p style="color: red;">
+        "You were never supposed to find out the truth."
+    </p>
+
+    <p>
+        Ethan ran out of the room and into the forest behind the hotel.
+    </p>
+
+    <p>
+        Rain poured heavily as he searched for a way out.
+    </p>
+
+    <p>
+        Then his flashlight revealed something half-buried in the mud.
+    </p>
+
+    <p>
+        A human skeleton.
+    </p>
+
+    <p>
+        Around its neck was the same broken necklace from the room.
+    </p>
+
+    <p>
+        Ethan finally understood.
+    </p>
+
+    <p>
+        Lily Harper had never left Ravenswood.
+    </p>
+
+    <p>
+        Her secret had been hidden beneath the forest all along.
+    </p>
+
+    <hr style="margin:40px 0;">
+
+    <p>
+        Suddenly, the sound of crunching leaves echoed behind him.
+    </p>
+
+    <p>
+        Ethan turned his flashlight toward the darkness.
+    </p>
+
+    <p>
+        The hotel owner was standing there.
+    </p>
+
+    <p>
+        His clothes were soaked by the rain, and his eyes looked cold and empty.
+    </p>
+
+    <p style="color:red;">
+        "You should have left this town while you still had the chance."
+    </p>
+
+    <p>
+        Ethan quickly grabbed his camera and took a photograph.
+    </p>
+
+    <p>
+        The bright flash lit up the forest for a second.
+    </p>
+
+    <p>
+        In that instant, Ethan noticed several fresh graves hidden among the trees.
+    </p>
+
+    <p>
+        His heart pounded.
+    </p>
+
+    <p>
+        Lily might not have been the only victim.
+    </p>
+
+    <p>
+        The hotel owner slowly stepped closer, dragging the shovel through the mud.
+    </p>
+
+    <p>
+        Ethan backed away carefully until his foot struck something hard.
+    </p>
+
+    <p>
+        He looked down and discovered an old wooden box buried beneath the dirt.
+    </p>
+
+    <p>
+        Inside were dozens of letters tied together with black ribbon.
+    </p>
+
+    <p>
+        They were written by Lily Harper.
+    </p>
+
+    <p>
+        One letter read:
+    </p>
+
+    <p style="font-style: italic;">
+        "If anyone finds this, do not trust Mr. Calloway.
+        He knows what happened to me."
+    </p>
+
+    <p>
+        Mr. Calloway.
+    </p>
+
+    <p>
+        The hotel owner.
+    </p>
+
+    <p>
+        Ethan suddenly realized the horrifying truth.
+    </p>
+
+    <p>
+        Lily had discovered something terrible about the town,
+        and she had been silenced before she could expose it.
+    </p>
+
+    <p>
+        Thunder shook the sky.
+    </p>
+
+    <p>
+        The hotel owner lunged toward Ethan with the shovel.
+    </p>
+
+    <p>
+        Ethan barely escaped and ran deeper into the forest.
+    </p>
+
+    <p>
+        Branches scratched his face as he sprinted through the darkness.
+    </p>
+
+    <p>
+        Behind him, he could hear the hotel owner shouting angrily.
+    </p>
+
+    <p>
+        Then—
+    </p>
+
+    <p>
+        Ethan saw lights ahead.
+    </p>
+
+    <p>
+        A small abandoned church stood at the edge of the woods.
+    </p>
+
+    <p>
+        He rushed inside and slammed the door shut.
+    </p>
+
+    <p>
+        The church smelled of dust and candle wax.
+    </p>
+
+    <p>
+        Old paintings covered the cracked walls.
+    </p>
+
+    <p>
+        At the altar, Ethan noticed another photograph.
+    </p>
+
+    <p>
+        It showed several townspeople standing beside Lily Harper.
+    </p>
+
+    <p>
+        Everyone in the photo had their faces scratched out except one.
+    </p>
+
+    <p>
+        Mr. Calloway.
+    </p>
+
+    <p>
+        Ethan’s hands trembled.
+    </p>
+
+    <p>
+        The entire town had hidden the truth for years.
+    </p>
+
+    <p>
+        Suddenly, the church doors creaked open.
+    </p>
+
+    <p>
+        Slow footsteps echoed across the floor.
+    </p>
+
+    <p style="color:red;">
+        "You cannot expose us,"
+    </p>
+
+    <p>
+        said a voice from the darkness.
+    </p>
+
+    <p>
+        Ethan turned pale as several townspeople entered the church silently.
+    </p>
+
+    <p>
+        They surrounded him.
+    </p>
+
+    <p>
+        Their faces showed no emotion.
+    </p>
+
+    <p>
+        Mr. Calloway stepped forward holding the shovel.
+    </p>
+
+    <p style="color:red;">
+        "Ravenswood survives because secrets stay buried."
+    </p>
+
+    <p>
+        Ethan quickly pulled out his phone.
+    </p>
+
+    <p>
+        Before arriving in town, he had secretly shared all his notes,
+        photographs, and recordings with his newspaper editor.
+    </p>
+
+    <p>
+        The evidence had already been sent.
+    </p>
+
+    <p>
+        Police sirens suddenly echoed in the distance.
+    </p>
+
+    <p>
+        Panic spread across the faces of the townspeople.
+    </p>
+
+    <p>
+        Mr. Calloway dropped the shovel and tried to escape,
+        but officers surrounded the church moments later.
+    </p>
+
+    <p>
+        The forest was searched overnight.
+    </p>
+
+    <p>
+        Several bodies were discovered buried beneath the trees.
+    </p>
+
+    <p>
+        The dark secrets of Ravenswood finally came to light.
+    </p>
+
+    <p>
+        Weeks later, Ethan published the story that shocked the entire country.
+    </p>
+
+    <p>
+        Ravenswood was no longer known as a peaceful town.
+    </p>
+
+    <p>
+        It became known as the town that buried the truth.
+    </p>
+
+    <p>
+        But even after everything ended,
+        Ethan could never forget one final detail.
+    </p>
+
+    <p>
+        On the night he left Ravenswood,
+        he received an anonymous letter slipped beneath his hotel door.
+    </p>
+
+    <p>
+
+        It contained only six chilling words:
+    </p>
+
+    <p style="text-align:center; color:#8b0000; font-size:22px; font-weight:bold;">
+        "Some secrets are still undiscovered."
+    </p>
+
+    <h2 style="text-align: center; color: #1e3a5f; margin-top:40px;">
+        🔍 THE END 🔍
+    </h2>
+
+</div>
+</div>
+       
+<!-- FOOTER -->
+
+<div class="footer">
+
+    <p>
+        © 2026 Web Spidey | All Rights Reserved
+    </p>
+
+</div>
+
+</body>
+</html>
+
